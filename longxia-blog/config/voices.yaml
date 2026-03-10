@@ -1,0 +1,42 @@
+# TTS 声音配置 (edge-tts)
+
+# 可用声音 ID
+voices:
+  # 中文声音
+  zh-CN-XiaoxiaoNeural:
+    name: "晓晓"
+    gender: "female"
+    description: "年轻女声，清晰自然"
+  zh-CN-YunxiNeural:
+    name: "云希"
+    gender: "male"
+    description: "年轻男声"
+  zh-CN-YunyangNeural:
+    name: "云扬"
+    gender: "male"
+    description: "标准男声"
+  zh-CN-XiaoyiNeural:
+    name: "小艺"
+    gender: "female"
+    description: "女声"
+  # 英文声音
+  en-US-JennyNeural:
+    name: "Jenny"
+    gender: "female"
+    description: "英文女声"
+  en-US-GuyNeural:
+    name: "Guy"
+    gender: "male"
+    description: "英文男声"
+
+# 当前使用的声音
+current: "zh-CN-XiaoxiaoNeural"
+
+# 语速 (0.5-2.0, 默认 1.0)
+speed: 1.0
+
+# 音量 (0.1-1.0, 默认 1.0)
+volume: 1.0
+
+# 音调 (0.5-2.0, 默认 1.0)
+pitch: 1.0

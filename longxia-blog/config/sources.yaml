@@ -1,0 +1,34 @@
+# 新闻源配置
+
+# RSS 订阅源
+rss:
+  - url: "https://www.36kr.com/feed/"
+    name: "36氪"
+    enabled: true
+  - url: "https://www.huxiu.com/rss/"
+    name: "虎嗅"
+    enabled: true
+  - url: "https://sspai.com/feed"
+    name: "少数派"
+    enabled: true
+  - url: "https://techcrunch.com/feed/"
+    name: "TechCrunch"
+    enabled: false
+  - url: "https://www.reddit.com/r/technology/.rss"
+    name: "Reddit Technology"
+    enabled: false
+
+# 指定 URL 抓取
+urls:
+  - url: "https://example.com/article"
+    name: "示例文章"
+    enabled: false
+
+# 本地文件夹
+local:
+  - path: "./inputs"
+    enabled: true
+    recursive: true
+    # 支持所有可读取的文字格式: txt, md, html, htm, xml, json, yaml, yml, doc, docx, pdf, epub, notion 等
+    # 根据文件扩展名自动选择解析器
+    auto_process: true

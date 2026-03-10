@@ -1,0 +1,43 @@
+# 发布配置
+
+# RSS Feed 配置
+rss:
+  title: "龙虾博客"
+  description: "AI 生成的新闻播客，每天为您播报最新科技资讯"
+  author: "龙虾博客"
+  email: "hello@longxia.blog"
+  language: "zh-CN"
+  category: "Technology"
+  explicit: "no"
+  cover_image: "./templates/cover.jpg"
+
+# 文件存储
+storage:
+  output_dir: "./output/episodes"
+  drafts_dir: "./output/drafts"
+  rss_file: "./output/rss.xml"
+  max_episodes: 30  # 保留最近 30 期
+
+# Webhook 通知
+webhook:
+  enabled: false
+  url: "https://example.com/webhook"
+  # 事件: episode_created, episode_published, error
+  events:
+    - episode_created
+
+# 播客平台 (可选)
+platforms:
+  apple_podcasts:
+    enabled: false
+    # 提交 RSS URL 到 Apple Podcasts Connect
+  spotify:
+    enabled: false
+    # 提交 RSS URL 到 Spotify for Podcasters
+  xiaoyuzhou:
+    enabled: false
+    # 提交 RSS URL 到小宇宙
+
+# 文件命名规则
+filename_template: "{date}_{index}.mp3"
+# 例如: 2026-03-10_001.mp3

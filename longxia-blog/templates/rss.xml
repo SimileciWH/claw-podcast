@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>龙虾博客</title>
+    <description>AI 生成的新闻播客，每天为您播报最新科技资讯</description>
+    <language>zh-CN</language>
+    <link>https://example.com</link>
+    <itunes:author>龙虾博客</itunes:author>
+    <itunes:category text="Technology" />
+    <itunes:explicit>no</itunes:image href="https://example.com/cover.jpg" />
+    
+    <!-- Episode 示例 -->
+    <item>
+      <title>2026-03-10_001</title>
+      <description>今天来聊聊...</description>
+      <pubDate>Mon, 10 Mar 2026 12:00:00 GMT</pubDate>
+      <enclosure url="https://example.com/episodes/2026-03-10_001.mp3" type="audio/mpeg" length="1234567" />
+      <guid>episode-2026-03-10_001</guid>
+    </item>
+  </channel>
+</rss>
